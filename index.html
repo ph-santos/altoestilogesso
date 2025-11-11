@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>AltoEstiloGesso</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="superinfo-bg">
+      <div class="superinfo">
+        <p>Seg / Sex - 07:00 às 17:00</p>
+        <a href="tel:+5527999703158">+55 27 99970-3158</a>
+        <p>R. Rio de Janeiro, 219 - Jardim Limoeirio - Serra - ES</p>
+      </div>
+    </div>
+
+    <header class="menu-bg">
+      <section class="menu">
+        <div class="menu-logo">
+          <img src="./assets/img/logo.jpg" alt="Logo da Alto Estilo Gesso e Decorações" />
+        </div>
+
+        <nav id="nav">
+          <button id="btn-mobile">
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu-list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#qualidade">Qualidade</a></li>
+            <li class="dark-theme-wrapper">
+              <div class="dark-theme">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="white" id="main">
+      <h1 class="introducao">Projetos e Molduras em Geral</h1>
+
+      <section class="sobre" id="sobre">
+        <div class="sobre-info">
+          <h1>Sobre</h1>
+          <p>
+            A mais de 20 anos no mercado a Alto Estilo Gesso & Decorações vem realizando um trabalho
+            de muita qualidade na grande Vitória e em outros lugares do Espírito Santo. Empresa
+            especializada na aplicação de gesso para a sua residência ou empresa, com materiais de
+            alta qualidade e atendimento diferenciado.
+          </p>
+        </div>
+        <div class="sobre-img">
+          <img src="./assets/img/fabrica1.jpg" alt="Imagem da fabrica" />
+        </div>
+      </section>
+
+      <section class="servicos" id="servicos">
+        <h1>Alguns dos Nossos Serviços</h1>
+      </section>
+
+      <section class="itens" id="preco">
+        <div class="item">
+          <h2>Bandeja de Luz Indireta</h2>
+          <img src="./assets/img/bandeija-de-luz-indireta.jpg" alt="Bandeija de Luz Indireta" />
+        </div>
+
+        <div class="item">
+          <h2>Sanca</h2>
+          <img src="./assets/img/sanca.jpg" alt="Sanca" />
+        </div>
+
+        <div class="item">
+          <h2>Roda Teto</h2>
+          <img src="./assets/img/roda-teto.jpg" alt="Roda Teto" />
+        </div>
+      </section>
+
+      <section class="orcamento" id="orcamento">
+        <h1>Simule seu Orçamento</h1>
+        <form id="formOrcamento">
+          <label for="tipoServico">Tipo de Serviço:</label>
+          <select id="tipoServico" required>
+            <option value="">Selecione</option>
+            <option value="forro">Forro de gesso</option>
+            <option value="sanca">Sanca</option>
+            <option value="moldura">Moldura decorativa</option>
+            <option value="bandeja">Bandeja de luz indireta</option>
+            <option value="RodaTeto">Roda Teto</option>
+          </select>
+
+          <label for="metragem">Área aproximada (m²):</label>
+          <input type="number" id="metragem" placeholder="Ex: 25" min="1" required />
+
+          <label for="local">Cidade/Bairro:</label>
+          <input type="text" id="local" placeholder="Ex: Jardim Limoeiro" required />
+
+          <button type="submit" class="submit-button">Calcular Orçamento</button>
+        </form>
+
+        <div id="resultado" class="resultado-orcamento"></div>
+      </section>
+
+      <section class="qualidade" id="qualidade">
+        <div class="qualidade-item">
+          <h2>Qualidade</h2>
+          <p>
+            A Alto Estilo Gesso & Decorações a mais de 20 anos trazendo um serviço de mais alta
+            qualidade para o seus clientes.
+          </p>
+        </div>
+
+        <div class="qualidade-item">
+          <h2>Atendimento</h2>
+          <p>
+            Nós prezamos sempre por um bom atendimento aos nossos clientes, sempre tiramos as
+            dúvidas e dando as melhores dicas para os seus projetos.
+          </p>
+        </div>
+
+        <div class="qualidade-item">
+          <h2>Confiabilidade</h2>
+          <p>
+            Nós já estamos a um bom tempo no mercado de gesso, entregando uns dos melhores serviços
+            quando se tratra de gesso, e buscamos sempre utilizar os melhores materiais para que
+            possamos garantir a você um trabalho que irá durar bastante tampo.
+          </p>
+        </div>
+      </section>
+
+      <section class="form-wrapper">
+        <h1>Se preferir nos mande um email 📧</h1>
+
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="6bfa94b8-93c3-4dd2-86dc-98b51018f35b" />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="https://ph-santos.github.io/site_altoestilogesso/"
+          />
+
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" placeholder="Seu Nome" />
+
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" placeholder="Seu Email" />
+
+          <textarea name="message" placeholder="Digite o email"></textarea>
+
+          <input type="submit" value="Enviar" class="submit-button" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Alto Estilo Gesso & Decorações © Todos os direitos reservados.</p>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=5527999703158&text=Ol%C3%A1,%20tudo%20bem?%20Quero%20fazer%20um%20or%C3%A7amento!"
+      class="btn-whatssapp"
+      target="_blank"
+    >
+      <img src="./assets/img/whatssapp.svg" alt="Botão whatssapp" />
+      <span class="tooltip-text">Mande uma mensagem</span>
+    </a>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/orcamento.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  </body>
+</html>
