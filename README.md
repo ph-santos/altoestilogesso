@@ -17,7 +17,8 @@ Esse projeto consiste em um página feita com HTML, CSS e JavaScript para a visu
 
 
 ## Sistema de Orçamento
-
+![Orcamento 1](https://github.com/ph-santos/altoestilogesso/blob/main/assets/img/Foto1.png)
+![Orcamento 2](https://github.com/ph-santos/altoestilogesso/blob/main/assets/img/Foto2.png)
 
 
 # Tecnologias utilizadas
